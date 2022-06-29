@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main(){
+	
+	int i = 2, n, T1, T2, T3;
+	printf("Digite o numero de termos: ");
+	scanf("%d", &n);	
+	printf("Digite o primeiro e o segundo termo: ");
+	scanf("%d%d", &T1,&T2);
+	
+	while(i < n){
+	    T3 = T2 + T1;
+	    printf(" - %d", T3);
+	    T1 = T2;
+	    T2 = T3;
+	    i++;
+	}
+	printf("\n");
+}
